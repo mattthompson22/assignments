@@ -24,11 +24,11 @@ var person = {
 
 var bob= ["B", "o", "b", "b", "y"];
 
-if (person.name.charAt(0) === "B" {
+if (person.name.charAt(0) === "B") {
     console.log("person.name" + " is allowed to go to the movie");
 }
 
 if (person.age >= 18 && person.name(0) === "B"){
-    
+
 }
 

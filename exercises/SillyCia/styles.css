@@ -1,0 +1,21 @@
+h1 {
+    color: darkgreen; 
+    font-family: "Georgia";
+    text-align: center;
+}
+h2 {
+    font-family: "Georgia";
+    text-align: center;
+}
+p {
+    line-height: 25px;
+}
+.link {
+    text-transform: uppercase;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

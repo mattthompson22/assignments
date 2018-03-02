@@ -1,6 +1,8 @@
 var movieWatcher = {
     name: "matt",
     age: 37,
+    favoriteColor: "black",
+    petName: "Max",
     favoriteMovies: [
         {
             movieName: "Gladiator", 
@@ -15,6 +17,8 @@ var movieWatcher = {
         {
             name: "Sarah",
             age: 36,
+            favoriteColor: "blue",
+            petName: "Max",
             favoriteMovies: [
                 {
                     movieName: "Mary Poppins", 
@@ -29,6 +33,8 @@ var movieWatcher = {
         {
             name: "Joe",
             age: 36,
+            favoriteColor: "blue",
+            petName: "Mularkey",
             favoriteMovies: [
                 {
                     movieName: "The Avengers",

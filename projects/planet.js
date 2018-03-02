@@ -10,7 +10,7 @@ just fix the existing ones.
 
 var enemies = ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"];
 
-funtion whoWins(isThereKryptonite, enemyName) {
+function whoWins(isThereKryptonite, enemyName) {
     if (!isThereKryptonite) {
         return "Superman beats " + enemyName + ", of course";
     } else {

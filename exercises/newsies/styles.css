@@ -1,0 +1,38 @@
+* {
+box-sizing: border-box;
+    font-size: 0px;
+}
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 64px;
+}
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.article {
+    border: 1px solid black;
+    display: inline-block;
+}
+p {
+    font-size: 14px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+h4 {
+    font-size: 25px;
+    text-align: center;
+}
+.classified {
+    display: inline-block;
+    height: 150px;
+    width: 25%;
+    border: 1px dashed black;
+    font-size: 12px;
+    text-align: center
+}

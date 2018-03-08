@@ -1,0 +1,16 @@
+body {
+    padding-top: 25%;
+    padding-left: 35%;
+    background-color: aliceblue;
+}
+h3 {
+    color: blue;
+}
+h1 {
+    color: blueviolet;
+}
+button {
+    color: red;
+    background-color: black;
+    cursor: pointer;
+}

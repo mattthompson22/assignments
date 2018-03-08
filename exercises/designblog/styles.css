@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+}
+nav {
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    height: 20px;
+    display: block;
+}
+body {
+    background-color: aliceblue;
+}
+.fake-link {
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+}
+.navbar li {
+    display: inline-block;
+}
+.posts {
+    
+}

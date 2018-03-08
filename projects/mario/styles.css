@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+body {
+    background-color:grey;
+}
+h1 {
+    color: red;
+    font-family: sans-serif;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+}
+h3 {
+    color: red;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+}
+h2 {
+    color: red;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.main {
+    color: red;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 0%;
+}
+.baddies {
+    color: red;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.email {
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: Arial;
+    text-decoration: underline;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.address {
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: Arial;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.website {
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: Arial;
+    cursor: pointer;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.input {
+    font-size: 12px;
+}
+#totalCost {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+button {
+    background-color: black;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}

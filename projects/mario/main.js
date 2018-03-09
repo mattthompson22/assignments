@@ -1,44 +1,41 @@
-var goombaCount = 0;
+// prices
+var goombaPrice = 5;
+var boBombPrice = 7;
+var cheepCheepPrice = 11;
+
 var goombaInput = document.getElementById("numberGoombas");
-
-var countGoombas = function(){
-    goombaCount= parseInt(goombaInput.value) *5;
-    total.innerHTML = Number(goombaCount);
-}
-
-goombaInput.addEventListener("input", countGoombas);
-
-var boBombCount = 0;
 var boBombInput = document.getElementById("numberBoBombs");
-
-var countBoBombs = function(){
-    boBombCount= parseInt(boBombInput.value) * 7;
-    total.innerHTML = Number(boBombCount);
-}
-
-boBombInput.addEventListener("input", countBoBombs);
-
-var cheepCheepCount = 0;
 var cheepInput = document.getElementById("numberCheepCheeps");
 
-var countCheepCheep = function(){
-    cheepCheepCount= parseInt(cheepInput.value) * 11;
-    total.innerHTML = Number(cheepCheepCount);
+var totalCost = document.getElementById("totalCost");
+
+
+// any change in one input, changes the total
+
+    // put an event listener on each input box
+    // calls the total() function
+
+// total is made up of each input value multiplied by its corresponding cost
+
+var total = function(){
+    var numberGoomba = Number(goombaInput.value);
+    var numberBoBombs = Number(boBombInput.value);
+    var numberCheepCheeps= Number(cheepInput.value);
+
+    var goombaCost = numberGoomba * 5;
+    var boBombCost = numberBoBombs * 7;
+    var cheepCheepCost = numberCheepCheeps * 11;
+
+    totalCost.innerHTML = goombaCost + boBombCost + cheepCheepCost;
+
 }
 
-cheepInput.addEventListener("input", countCheepCheep);
-
-// var result = function() {
-//     return Number(countCheepCheep() * 11);
-//     console.log(Number(countCheepCheep() * 11));
-// }
-
-var total = document.getElementById("totalCost");
-
-// total.innerHTML = Number(countGoombas()) + Number(countBoBombs()) + Number(countCheepCheep());
-
-// document.getElementById("killButton").addEventListener("click", function() {
-//     document.getElementById("totalCost").innerHTML= (goombaInput * 5) + (boBombInput * 7) + (cheepInput * 11)
-// })
+goombaInput.addEventListener("input", total);
+boBombInput.addEventListener("input", total);
+cheepInput.addEventListener("input", total);
+    // find the values in each input field
+    // multiply each value by x cost
+    // add the result together
+    // print it to the page
 
 

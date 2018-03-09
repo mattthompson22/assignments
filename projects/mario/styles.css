@@ -3,78 +3,92 @@
     font-size: 0px;
 }
 body {
-    background-color:grey;
+    background-color: black;
+    height: 100%;
 }
 h1 {
-    color: red;
+    color: cyan;
     font-family: sans-serif;
     font-size: 42px;
     text-align: center;
     padding: 20px;
 }
 h3 {
-    color: red;
+    color: cyan;
     font-family: cursive;
     font-size: 30px;
     text-align: center;
 }
 h2 {
-    color: red;
+    color:cyan;
     font-family: sans-serif;
     font-size: 14px;
     text-align: center;
 }
 .main {
-    color: red;
+    color: cyan;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     padding-left: 0%;
 }
 .baddies {
-    color: red;
+    color: cyan;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
+    padding: 0;
+}
+li {
+    color: cyan;
+    font-size: 14px;
+    font-family: sans-serif;
 }
 
 .email {
-    color: whitesmoke;
-    font-size: 12px;
-    font-family: Arial;
     text-decoration: underline;
     display: inline-block;
     width: 33%;
     text-align: center;
+    font-size: 12px;
 }
 .address {
-    color: whitesmoke;
-    font-size: 12px;
-    font-family: Arial;
     display: inline-block;
     width: 33%;
     text-align: center;
+    font-size: 12px;
 }
 .website {
-    color: whitesmoke;
-    font-size: 12px;
-    font-family: Arial;
     cursor: pointer;
     display: inline-block;
     width: 33%;
     text-align: center;
+    font-size: 12px;
 }
 .input {
     font-size: 12px;
+    margin-bottom: 12px;
+}
+.total {
+    font-size: 20px;
+    color: red;
+    text-align: center;
 }
 #totalCost {
-    font-size: 12px;
-    color: black;
-    text-align: center;
-}
-button {
-    background-color: black;
+    font-size: 20px;
     color: red;
-    font-size: 12px;
     text-align: center;
 }
+.footer {
+    width:  100%;
+    position: fixed;
+    bottom: 0;
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: Arial;
+}
+.pic {
+    height: 50px;
+    width: 50px;
+}
+

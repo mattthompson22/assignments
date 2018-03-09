@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+    border: 1px solid black;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.name {
+    background-color: yellow;
+    flex: .11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    color: red;
+    font-size: 32px;
+    padding-left: 12px;
+}
+.banner {
+    background-color: red;
+    flex: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    background-image: "./luigi.png";
+    height: 95%;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.about {
+    background-color: white;
+    flex: .25;
+    display: flex;
+}
+h2 {
+    color: red;
+    font-size: 20px;
+}
+p {
+    color: red;
+    font-size: 14px;
+}
+.mushroom {
+    background-color: yellow;
+    flex: .14;
+    display: flex;
+}

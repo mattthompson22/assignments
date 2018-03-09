@@ -33,3 +33,37 @@ function chessBoardGen(num) {
     return output;
 }
 console.log(chessBoardGen(8));
+
+// while (true) {
+    //do the thing
+// }
+
+var rs = require("readline-sync");
+var playerLife = 3;
+
+var playTheGame = function(){
+    var playerName = readline-sync.question("What's your name?");
+    console.log ("thanks " + playerName)
+    if (playerName === "ben") {
+        console.log("you're stealing my life");
+        playerLife--;
+        console.log(playerLife);
+    } else if (playerName === "jamie"){
+        console.log("more life for you")
+        playerLife++;
+        console.log(playerLife);
+    }
+}
+while (playerLife > 0) {
+    playTheGame();
+}
+
+console.log("you lose");
+
+if (playerOneWins) {
+    alert("congrats player one")
+} else if (playerTwoWins) {
+    alert("congrats player two")
+} else {
+    alert("how did that happen?")
+}

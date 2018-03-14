@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+body {
+    height: 100vh;
+    position: relative;
+}
+.wrapper {
+    position: absolute;
+}
+/* .box { */
+    /* height: 300px;
+    width: 300px; */
+    /* display: inline-block; */
+    /* margin: 10px;
+    padding: 10px;  */
+/* } */
+.black {
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+}
+.black:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    height: 150px;
+    width: 150px;
+}
+.cyan {
+    background-color: cyan;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: solid black 20px;
+}
+.cyan:hover {
+    background-color: black;
+    border: solid cyan 20px;
+    transition-property: all;
+    transition-duration: .75s;
+}
+.green {
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px; 
+}
+.green:hover {
+    box-shadow: 10px 10px 5px 0 #000000;
+    width: 150px;
+    transition-property: all;
+    transition-duration: .75s;
+}
+.silver {
+    background-color: silver;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: solid navy 10px; 
+}
+.silver:hover {
+    border: dashed red 10px;
+    background-color: mediumturquoise;
+    transition-property: all;
+    transition-duration: .25s;
+}
+.purple {
+    background-color: purple;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px; 
+}
+.purple:hover {
+    transition-property: all;
+    transition-duration: 3s;
+    margin: 0px;
+    padding: 0px;
+}
+.blue {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px; 
+}
+.blue:hover {
+    opacity: .5;
+    transition-property: all;
+    transition-duration: 2s;
+    height: 100px;
+}

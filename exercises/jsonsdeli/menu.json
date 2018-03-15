@@ -1,0 +1,59 @@
+{
+    "menu": "item",
+    "appetizers": [
+        {
+        "name": "mozzerella sticks", 
+        "ingredients": ["cheese", "breading"], 
+        "description": "fried mozzerella" 
+        },
+        {
+        "name": "fried pickles", 
+        "ingredients": ["pickles", "breading"],
+        "description": "deep-fried pickles"
+        }],   
+    "cold sandwiches": [
+        {
+        "name": "turkey and swiss",
+        "ingredients": ["bread", "turkey", "swiss cheese"],
+        "description": "a turkey and cheese sandwich"
+        }, 
+        {
+        "name": "ham and cheddar", 
+        "ingredients": ["bread", "ham", "cheddar"],
+        "description": "a ham and cheese sandwich" 
+        }],
+    "hot sandwiches": [
+        {
+        "name": "grilled cheese", 
+        "ingredients": ["bread", "cheese"],
+        "description": "it's a grilled cheese sandwich"
+        },
+        {
+        "name": "turkey melt",
+        "ingredients": ["turkey", "cheese", "bread"],
+        "description": "it's a hot turkey sandwich"
+        }],
+    "desserts": [
+        {
+        "name": "ice cream", 
+        "ingredients": "ice cream",
+        "description": "it's fricking ice cream"
+        },
+        {
+        "name": "cupcakes",
+        "ingredients": ["flour", "sugar", "other cupcake stuff"],
+        "description": "cupcakes"
+        }],
+    "drinks": [
+        {
+        "name": "margaritas", 
+        "ingredients": ["sugar", "lime", "tequila"],
+        "description": "a margarita"
+        },
+        {
+        "name": "water",
+        "ingredients": ["water"],
+        "description": "water"
+        }]
+}
+

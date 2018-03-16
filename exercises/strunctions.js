@@ -1,3 +1,7 @@
+// .match()
+// .replace()
+// .split()
+// .substr()
 var ape = "supercalifragilistic";
 var banana = "expealidocious";
 
@@ -13,11 +17,15 @@ var banana = "expealidocious";
 
 // console.log(balls());
 
+// var balls = function() {
+//     if (ape.indexOf("a") >= 6) {
+//         return ape.lastIndexOf("a")
+//     } else {
+//         return banana.slice(6, 9);
+//     } 
+// }
+// console.log(balls());
+
 var balls = function() {
-    if (ape.indexOf("a") >= 6) {
-        return ape.lastIndexOf("a")
-    } else {
-        return 
-    }
+    
 }
-console.log(balls());

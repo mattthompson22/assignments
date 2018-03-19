@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.container {
+    height: 1400px;
+    display: grid;
+    grid-template-areas: "hdr" "nav" "about" "part" "req" "ftr" "art" "men";
+    grid-template-rows: .15fr 1fr 1fr 1fr 1fr .2fr .5fr .5fr;
+}
+header {
+    grid-area: hdr;
+}
+nav{
+    grid-area: nav;
+}
+.about{
+    grid-area: about;
+}
+.participation{
+    grid-area: part;
+}
+.requirement{
+    grid-area: req;
+}
+footer{
+    grid-area: ftr;
+}
+.art{
+    grid-area: art;
+}
+.menu{
+    grid-area: men;
+}
+@media (min-width: 600px){
+    .container{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: .2fr 1fr 1fr 1fr .8fr;
+        grid-template-areas: "hdr nav" "about men" "part men" "req ." "ftr ftr"; 
+    }
+}

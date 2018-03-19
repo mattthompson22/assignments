@@ -16,8 +16,8 @@ var userData = {
     firstName: "",
     lastName: "",
     age: "",
-    gender: 
-    location: 
+    gender: "",
+    destination: "",
     dietaryRestrictions: [],
 
     
@@ -25,11 +25,11 @@ var userData = {
 
 
 var setDestination = function(event){
-    console.log(event.target.checked) {
-        userData.
+    console.log(event.target.checked); {
+        userData.destination.value;
     }
 }
 
 form.addEventListener("submit", function(){
-    alert("First Name: " + userData.firstName + "\n" + "Last Name: " + userData.lastName + "\n" + userData.age + "\n" + "gender: " + )
+    alert("First Name: " + userData.firstName + "\n" + "Last Name: " + userData.lastName + "\n" + userData.age + "\n" + "gender: " + destination + dietaryRestrictions);
 })

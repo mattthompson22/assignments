@@ -1,4 +1,5 @@
 var rs = require("readline-sync");
+//villains: cubs, yankees, red sox
 
 //what is wincon and what is losecon?
     //losecon = hitpoints = 0
@@ -23,8 +24,9 @@ var Enemy = function(){
     //etc.
 }
 
-// while(player.hp > 0 && player.enemiesKilled < 3) {
-
+// while(player.hp > 0 && player.enemiesKilled < 3) { 
+//     playGame();
+// }
 // }
 
 // if(//losecon met ...)

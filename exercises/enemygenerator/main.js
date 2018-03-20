@@ -1,10 +1,12 @@
-//write contructor function that makes objects with 3 properties: type, hitpoints and defense
+//write constructor function that makes objects with 3 properties: type, hitpoints and defense
 //write function that allows us to choose a random enemy
+
+
 
 var Enemy = function (){
     this.type = this.getRandomType();
     this.hitPoints = this.genHitPoints;
-    this.defense = this.hitpoints * 3;
+    this.worldSeriesRings = this.getWorldSeriesRings;
 }
 
 Enemy.prototype.getRandomType = function() {

@@ -1,0 +1,37 @@
+box
+
+body {
+    margin: 0;
+}
+
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    position:
+}
+
+/* 
+positioning
+
+NOT POSITIONED
+
+
+position: static;
+anything you didn't tell to be positioned, is position static
+
+Positioned:
+everything else
+
+position: fixed-glues element to the screen (not the document)and removes item from flow of the document(other elements can take up that same space
+gives you extra properties for moving it around (top, bottom, right, left, and combinations of those)
+for navbars, footers, menus
+
+position: absolute - (requires a positioned ancestor) removes from flow of document, stuck in place on the document
+gives extra properties for moving it around 
+positioned relative to its most closely related ancester (if none, positions itself in relation to window)
+
+position: relative - 
+
+*/

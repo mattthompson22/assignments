@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightcyan;
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+    font-size: 14;
+    text-align: center;
+}
+button {
+    background-color: lightgray;
+}
+form {
+    text-align: center;
+    display: inline-block;
+}
+.wrapper {
+    position: relative;
+    text-align: center;
+}
+ul {
+    display: inline-block;
+    text-align: center;
+}
+li {
+    text-align: center;
+    justify-content: left;
+    
+}

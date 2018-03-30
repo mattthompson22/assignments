@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Batman",
+        "pic": "https://img00.deviantart.net/7a0c/i/2014/065/c/9/batman_wb_studios_mural_by_spawnofsprang-d7969ht.png",
+        "catchPhrase": "Holla Holla"
+    },
+    {
+        "name": "Superman",
+        "pic": "https://vignette.wikia.nocookie.net/fictional-battle-omniverse/images/c/c5/Superman_One_Million_DC_Comics.png/revision/latest?cb=20170410190246",
+        "catchPhrase": "Javascript is for nerds!"
+    },
+    {
+        "name": "Blade",
+        "pic": "https://vignette.wikia.nocookie.net/avengersalliance/images/1/17/Blade_Dialogue_1.png/revision/latest?cb=20141029103524",
+        "catchPhrase": "I heart Wesley Snipes"
+    }
+]

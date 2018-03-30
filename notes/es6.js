@@ -48,3 +48,158 @@ function exponent(x, y=2){
     return Math.pow(x, y);
 }
 console.log(exponent(3));
+
+//object literals
+let name = "ben";
+let age = 20;
+
+let person = {
+    name,
+    age
+}
+
+const expressArr = () => {
+    //function body
+}
+//anonymous
+()=>{}
+
+[1, 2, 3, 4, 5].filter((num) => {
+    return num % 2;
+})
+
+//functions can 
+    //have no paramaters
+    //one paramater
+    // x => {}
+    // //more paramaters
+    // (param1, param2) => {}
+    
+    // //have only one line in function body (can omit curly braces)
+    // (x, y) => x + y;
+    // //more than one expression in function body
+    //     //must include curly braces
+    //     (x, y) => {
+    //         x = y;
+    //         console.log(x);
+    //     }
+    // //return an object
+    //     (x, y) => ({
+    //         x,
+    //         y
+    //     })
+
+//this
+
+
+
+// function speak(){
+//     console.log(`hi, my name is ${this.name}`)
+// }
+// function introspect(){
+//     console.log(this);
+// }
+// const person = {
+//     name: "ben",
+//     speak,
+//     introspect
+// }
+
+// const Person = function(name, age){
+//     this.name = name;
+// }
+// Person.prototype.introspect = introspect;
+
+// const steven = new Person("steven");
+// steven.introspect();
+
+// const people = [new Person("ben"), new Person("ilian"), new Person("steven")];
+
+// people.forEach(function(person1, person2){
+
+// });
+
+//sometimes we want to refer to a different 'this' than the one we have available
+// const data = this;
+// const getData = function(callback){
+//     let rawData = "abasdf"
+//     callback(rawData);
+// }
+// getData(function(data) {
+//     this.data = data;
+// })
+
+//OR
+
+// const getData = cb => {
+//     let rawData = "adfl;k";
+//     callback(rawData);
+// }
+// getData(info => {
+//     this.info = info;
+// })
+
+// const Traveler = function(name){
+//     this.name = name;
+//     this.message = "blah blah blah";
+//     this.translator = {
+//         translate: function(){
+//             console.log(this.message);//won't work because this.message refers to translator object
+//         }
+//     }
+// }
+// const steven = new Traveler("steven");
+// steven.translator.translate();
+
+// const Traveler = function(name){
+//     this.name = name;
+//     this.message = "blah blah blah";
+//     this.translator = {
+//         translate: ()=>console.log(this.message)//arrow function doesn't 
+        
+//     }
+// }
+// const steven = new Traveler("steven");
+// steven.translator.translate();
+
+//constructor functions
+// const Animal = function(name){
+//     this.hasCellWall = false;
+// }
+// Animal.prototype.makeSound = function(){
+//     console.log(this.sound);
+// }
+
+
+// const Mammal = function(sound){
+//     Animal.call(this, sound);//call this function, but use the "this" from the Animal property
+//     this.hasFur = true;
+//     this.liveBirth = true;
+// }
+// Mammal.prototype = Object.create(Animal.prototype)
+
+// const cow = new Mammal("moooo");
+// cow.makeSound();
+
+//how you define methods in a class
+class Animal {
+    constructor(sound){
+        this.hasCellWall = false;
+        this.sound = sound;
+    }
+    makeSound(){
+        console.log(this.sound);
+    }
+}
+
+class Mammal extends Animal {
+    constructor(sound){
+        super(sound)
+        this.hasFur = true;
+        this.liveBirth = true;
+    }
+}
+const cow = new Animal("moo");
+
+cow.makeSound()
+console.log(cow);

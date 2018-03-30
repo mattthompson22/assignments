@@ -1,0 +1,11 @@
+.toDoList > li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.toDoList > li > button {
+
+}
+.toDoList > li > button:hover {
+    cursor: pointer;
+}

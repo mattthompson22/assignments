@@ -1,26 +1,28 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .container {
-    height: 1400px;
+    height: 3574px;
     display: grid;
-    grid-template-areas: "hdr" "nav" "about" "part" "req" "ftr" "art" "men";
-    grid-template-rows: .15fr 1fr 1fr 1fr 1fr .2fr .5fr .5fr;
+    grid-template-areas: "hdr" "abt" "prt" "req" "ftr" "art" "men";
+    grid-template-columns: 1fr;
+    grid-template-rows: .0705fr .2561fr .2188fr .2423fr .0951fr .0747fr .0425fr;
 }
 header {
     grid-area: hdr;
 }
-nav{
+nav{ 
     grid-area: nav;
+    display: none;
 }
 .about{
-    grid-area: about;
+    grid-area: abt;
 }
 .participation{
-    grid-area: part;
+    grid-area: prt;
 }
 .requirement{
     grid-area: req;
@@ -28,16 +30,114 @@ nav{
 footer{
     grid-area: ftr;
 }
-.art{
+.artists{
     grid-area: art;
 }
 .menu{
     grid-area: men;
 }
-@media (min-width: 600px){
+@media (min-width: 501px){
     .container{
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: .2fr 1fr 1fr 1fr .8fr;
-        grid-template-areas: "hdr nav" "about men" "part men" "req ." "ftr ftr"; 
+        height: 3702px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .0621fr .2472fr .2115fr .2332fr .0929fr .0962fr .0567fr;
+        grid-template-areas: "hdr" "abt" "prt" "req" "ftr" "art" "men"; 
     }
+    header {
+        grid-area: hdr;
+       
+    }
+    nav{
+        grid-area: nav;
+        display: none;
+    }
+    .about{
+        grid-area: abt;
+    }
+    .participation{
+        grid-area: prt;
+    }
+    .requirement{
+        grid-area: req;
+    }
+    footer{
+        grid-area: ftr;
+    }
+    .artists{
+        grid-area: art;
+    }
+    .menu{
+        grid-area: men;
+    }
+}
+@media (min-width: 601px){
+    .container{
+        height: 3479px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .0661fr .2515fr .2021fr .2190fr .0986fr .1023fr .0604fr;
+        grid-template-areas: "hdr" "abt" "prt" "req" "ftr" "art" "men"; 
+    }
+    header {
+        grid-area: hdr;
+    }
+    nav{
+        grid-area: nav;
+        display: none;
+    }
+    .about{
+        grid-area: abt;
+    }
+    .participation{
+        grid-area: prt;
+    }
+    .requirement{
+        grid-area: req;
+    }
+    footer{
+        grid-area: ftr;
+    }
+    .artists{
+        grid-area: art;
+    }
+    .menu{
+        grid-area: men;
+    }
+}
+@media (min-width: 1132px){
+    .container{
+        height: 3750px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: .0827fr .2917fr .2347fr .2645fr .1264fr;
+        grid-template-areas: "hdr nav" "abt art" "prt men" "req ." "ftr ftr"; 
+    }
+    header {
+        grid-area: hdr;
+    }
+    nav{
+        grid-area: nav;
+    }
+    .about{
+        grid-area: abt;
+    }
+    .participation{
+        grid-area: prt;
+    }
+    .requirement{
+        grid-area: req;
+    }
+    footer{
+        grid-area: ftr;
+    }
+    .artists{
+        grid-area: art;
+    }
+    .menu{
+        grid-area: men;
+    }
+}
+@media (min-width: 1133px){
+    
 }

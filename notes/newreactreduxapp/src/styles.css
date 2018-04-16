@@ -1,0 +1,12 @@
+.app {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+button {
+    width: 80px;
+    font-size: 2em;
+    margin: 10px;
+}

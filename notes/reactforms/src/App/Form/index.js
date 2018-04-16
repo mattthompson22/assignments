@@ -14,7 +14,7 @@ class Form extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
+ 
     handleChange(event){
         //take value from input and set state accordingly
         //target = the event on which the change occurred

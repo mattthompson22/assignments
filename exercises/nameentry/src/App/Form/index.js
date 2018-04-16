@@ -49,7 +49,7 @@ class Form extends Component {
                <div>   
                     <input name = "firstName" onChange = {this.handleChange} value = {firstName} type = "text" placeholder = "Enter Name"/>
                         <button>Submit</button>
-                    <h1>{firstName}</h1>  
+                    <h1>{firstName}</h1>  {/* displays info as you type in the input box */}
                 </div>
                 <div>
                     {people.map((inputObj, i) => <Peoplelist monkeys = {inputObj} key = {inputObj.firstName + i} />)}

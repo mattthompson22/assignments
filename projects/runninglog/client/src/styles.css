@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.wrapper {
+    /* background: url("./icons/471093573.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    height: auto;
+    /* background-position-x: 75%; */
+    background-color: rgb(134, 196, 41);
+    font-family: Ultra;
+}
+.homeWrapper {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    
+    
+}
+.header {
+    position: relative;
+    display: block;
+    padding-right: 10px;
+    background-image: url("./icons/brick background.jpg");
+}
+
+.welcome {
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+    color: crimson;
+    
+}
+.logOut {
+    position: relative;
+    text-align: right;
+}
+.signOut {
+    
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Exo2-Thin;
+}
+.signOut:hover {
+    color: rgb(134, 196, 41);
+    cursor: pointer;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-left: 10px;
+    font-size: 24px;
+    
+}
+.title {
+    text-decoration: none;
+    color: crimson;
+}
+.title:hover {
+    color: black;
+    cursor: pointer;
+}
+.activityChooser {
+    display: grid;
+}
+.activityChooser > h1 {
+    display: grid;
+    text-align: center;
+    padding-top: 14px;
+    background-image: url("./icons/brick background.jpg");
+    color: whitesmoke;
+    font-family: Exo2-Thin;
+    font-size: 24px;
+}
+nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(134, 196, 41);
+}
+.running {
+    padding-top: 24px;
+    margin-top: 15px;
+    background-image: url("./icons/running_icon.png");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: 130px;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+.running:hover {
+    opacity: .3;
+    cursor: pointer;
+    
+        
+    
+}
+.weightlifting {
+    padding-top: 24px;
+    background-image: url("./icons/weightlifting_icon.png");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: 160px;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.weightlifting:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+.cycling {
+    padding-top: 24px;
+    margin-top: 10px;
+    background-image: url("./icons/cycling_icon.png");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+}
+.cycling:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+.swimming {
+    padding-top: 24px;
+    margin-top: 40px;
+    background-image: url("./icons/swimming_icon.png");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: 130px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.swimming:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+.spacer {
+    display: grid;
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+.labelRun {
+    display: none;
+}
+.labelLift {
+    display: none;
+}
+.labelRide {
+    display: none;
+}
+.labelSwim {
+    display: none;
+}
+.runHeader {
+    background-image: url("./icons/brick background.jpg");
+    height: 80px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.runIcon {
+    background-image: url("./icons/running_icon.png");
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 100px;
+    width: 100px;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+.runWrapper {
+    background-color: rgb(134, 196, 41);
+    height: 100vh;
+}
+
+.formWrapper {
+    display: grid;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr;
+
+    
+}
+.dateInput {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 2px;
+}
+.distanceInput {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 2px;
+}
+.timeInput {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 2px;
+}
+.typeInput {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 2px;
+}
+
+.runButton {
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    padding-left: 5px;
+    border-radius: 8px;
+    
+}
+.runButton:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+
+.runDisplay {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr .5fr;
+    border-bottom: gray 1px solid;
+}
+.dateWord {
+    display:none;
+}
+.distanceWord {
+    display:none;
+}
+.timeWord {
+    display:none;
+}
+.typeWord {
+    display:none;
+}
+.dateDisplay {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+   
+}
+.distanceDisplay {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.timeDisplay {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    
+}
+.typeDisplay {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+    
+
+
+.deleteButton {
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    
+    justify-self: left;
+   
+    border-radius: 8px;
+    
+}
+.deleteButton:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+.editButton {
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    
+    justify-self: left;
+   
+    border-radius: 8px;
+    
+}
+.editButton:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+.editWrapper {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/5;
+
+}
+.editDateInput {
+    display: grid;
+    grid-row:1/2;
+    grid-column: 1/2;
+    margin: 2px;
+}
+.editDistanceInput {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin: 2px;    
+}
+.editTimeInput {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: 2px;
+}
+.editTypeInput {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 2px;
+}
+.editSubmitButton {
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    padding-left: 5px;
+    border-radius: 8px;
+    
+}
+.runButton:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+@font-face {
+    font-family: "Ultra";
+    src: url("./fonts/Ultra-Regular.ttf");
+}
+@font-face {
+    font-family: Exo2-Thin;
+    src: url("./fonts/Exo2-Thin.ttf");
+}
+
+@media(min-width: 600px){
+   
+    nav {
+        display: grid;
+        grid-template-rows: 1fr .25fr 1fr .25fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        background-color: rgb(134, 196, 41);
+    }
+    .labelRun {
+        color: black;
+        font-size: 32px;
+        display:grid;
+        grid-row: 2/3; 
+    }
+    .labelLift {
+        color: black;
+        font-size: 32px;
+        display:grid;
+        grid-row: 2/3; 
+    }
+    .cycling {
+        display: grid;
+        grid-row: 3/4;
+    }
+    .labelRide {
+        color: black;
+        font-size: 32px;
+        display:grid;
+        grid-row: 4/5; 
+        grid-column: 1/2;
+    }
+    .swimming {
+        display: grid;
+        grid-row: 3/4;
+    }
+    .labelSwim {
+        color: black;
+        font-size: 32px;
+        display:grid;
+        grid-row: 4/5; 
+        grid-column: 2/3;
+    }
+    .activityChooser > h1 {
+        display: grid;
+        text-align: left;
+        padding-top: 14px;
+        font-size: 32px;
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 42px;
+    }
+    .runHeader {
+        height: 80px;
+        padding-bottom: 20px;
+    }
+    .runIcon {
+        height: 100px;
+        width: 100px;
+        background-size: 80px;
+        margin-left: 200px;
+        
+    }
+    
+}
+@media (min-width: 1000px) {
+    .title {
+        font-size: 48px;
+    }
+    .activityChooser > h1 {
+        display: grid;
+        text-align: left;
+        padding-top: 14px;
+        font-size: 42px;
+        padding-left: 10px;
+    }
+    .running {
+        background-size: 160px;
+        height: 180px;
+        width: 180px;
+        
+    }
+    .labelRun {
+        font-size: 36px;
+    }
+    .weightlifting {
+        background-size: 180px;
+        height: 200px;
+        width: 200px;
+    }
+    .labelLift {
+        font-size: 36px;
+    }
+    .cycling {
+        background-size: 180px;
+        height: 180px;
+        width: 180px;
+    }
+    .labelRide {
+        font-size: 36px;
+    }
+    .swimming {
+        background-size: 150px;
+        height: 180px;
+        width: 180px;
+    }
+    .labelSwim {
+        font-size: 36px;
+    }
+    .runIcon {
+        height: 100px;
+        width: 100px;
+        background-size: 80px;
+        margin-left: 350px;
+    }
+    .runDisplay {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr .5fr;
+        border-bottom: gray 1px solid;
+    }
+    .dateWord {
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: left;
+        align-self: center;
+    }
+    .distanceWord {
+        display:grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        justify-self: left;
+        align-self: center;
+    }
+    .timeWord {
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: left;
+        align-self: center;
+    }
+    .typeWord {
+        display:grid;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        justify-self: left;
+        align-self: center;
+    }
+    .dateDisplay {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: left;
+       
+    }
+    .distanceDisplay {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 4/5;
+        align-self: center;
+        justify-self: left;
+    }
+    .timeDisplay {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: left;
+        
+    }
+    .typeDisplay {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 4/5;
+        align-self: center;
+        justify-self: left;
+    }
+    .editButton {
+        background-color: black;
+        color: whitesmoke;
+        height: 40px;
+        width: 40px;
+        font-size: 8px;
+        display: grid;
+        grid-column: 5/6;
+        grid-row: 2/3;
+        justify-self: center;
+
+       
+        border-radius: 8px;
+        
+    }
+    .deleteButton {
+        background-color: black;
+        color: whitesmoke;
+        height: 40px;
+        width: 40px;
+        font-size: 8px;
+        display: grid;
+        grid-column: 5/6;
+        grid-row: 1/2;
+        justify-self: center;
+       
+        border-radius: 8px;
+        
+    }
+}

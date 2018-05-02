@@ -9,6 +9,6 @@ function App(props){
             <List></List>
         </div>
     )
-}
+} 
  
 export default App;

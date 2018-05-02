@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-import {connect} from "react-redux";
+import {connect} from "react-redux"; 
 import {getRandom} from "../../../../redux/random.js";
 
 import RandomDrinkRecipe from "./RandomDrinkRecipe";

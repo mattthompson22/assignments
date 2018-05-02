@@ -4,15 +4,10 @@
     padding: 0;
 }
 
-/* .wrapper {
-    background-image: url("whiskey.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
 .footer {
     position: sticky;
     text-align: center;
-    /* padding: padding 5px; */
     font-style: italic;
     color: lightcyan;
     background: url("brick background.jpg");
@@ -25,7 +20,6 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 .header {
-    /* background-color: black; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     background: url("brick background.jpg");
@@ -40,7 +34,7 @@
     font-style: italic;
     font-weight: bold;
 }
-nav {
+nav { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-size: 11px;
